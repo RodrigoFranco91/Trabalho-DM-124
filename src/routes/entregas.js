@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const entregaService = require('../services/EntregaService');
 
 router.post('/', checkAuth, async (request, response) => {
 
