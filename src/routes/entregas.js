@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const entregaService = require('../services/EntregaService');
+const notFound = require('../middleware/not-found');
+const checkAuth = require('../middleware/check-auth');
 
 router.post('/', checkAuth, async (request, response) => {
 
