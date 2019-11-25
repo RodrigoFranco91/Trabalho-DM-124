@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const notFound = require('./middleware/not-found');
 
 // Middleware imports
 const cors = require('cors');
