@@ -30,14 +30,14 @@ class EntregaService {
   }
 
   static update(id, updatedEntrega) {
-    
+
   }
 
   static delete(id) {
 
   }
 
-  
+
 }
 
 module.exports = EntregaService;
