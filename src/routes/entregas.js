@@ -12,7 +12,6 @@ router.post('/', checkAuth, async (request, response) => {
 });
 
 router.get('/', async (request, response) => {
-
 });
 
 router.get('/:entregasId', async (request, response) => {
