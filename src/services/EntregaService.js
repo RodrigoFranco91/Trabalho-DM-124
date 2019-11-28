@@ -38,7 +38,14 @@ class EntregaService {
   }
 
   static delete(id) {
-
+    return new Promise((resolve) => {
+      const entrega = db[id];
+      if(entrega) {
+        delete db[id];
+        resolve(true);
+      }
+      resolve(false);
+    });
   }
 
 
