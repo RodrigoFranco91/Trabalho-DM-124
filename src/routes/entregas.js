@@ -12,10 +12,7 @@ router.post('/', checkAuth, async (request, response) => {
 });
 
 router.get('/', async (request, response) => {
-  const entregas = await entregaService.getAll();
-  entregas && entregas.length
-    ? response.json(entregas)
-    : response.status(204).end();
+
 });
 
 router.get('/:entregasId', async (request, response) => {
