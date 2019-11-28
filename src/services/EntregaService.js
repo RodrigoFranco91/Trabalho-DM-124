@@ -5,7 +5,20 @@ let sequence = 0;
 class EntregaService {
 
   static add(newEntrega) {
-
+    return new Promise((resolve) => {
+      const entrega = {
+        id: ++sequence,
+        idDoPedido: newEntrega.idDoPedido,
+        idDoCliente: newEntrega.idDoCliente,
+        nomeDoRecebedor: newEntrega.nomeDoRecebedor,
+        cpfDoRecebedor: newEntrega.cpfDoRecebedor,
+        recebedorComprador: newEntrega.recebedorComprador || false,
+        dataHoraEntrega: newEntrega.dataHoraEntrega,
+        localizacao: newEntrega.localizacao
+      };
+      db[entrega.id] = entrega;
+      resolve(entrega);
+    });
   }
 
   static getAll() {
@@ -23,6 +36,7 @@ class EntregaService {
   static delete(id) {
 
   }
+
   
 }
 
