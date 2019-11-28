@@ -22,6 +22,11 @@ class EntregaService {
   }
 
   static getAll() {
+    const toArray = key => db[key];
+    return new Promise((resolve) => {
+      const entregas = Object.keys(db).map(toArray);
+      resolve(entregas);
+    });
 
   }
 
