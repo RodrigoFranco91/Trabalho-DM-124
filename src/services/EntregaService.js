@@ -50,7 +50,6 @@ class EntregaService {
     });
   }
 
-
 }
 
 module.exports = EntregaService;

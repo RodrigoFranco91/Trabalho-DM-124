@@ -26,7 +26,13 @@ router.get('/:entregasId', async (request, response) => {
 });
 
 router.patch('/:entregaId', checkAuth, async (request, response) => {
-
+  const updatedEntrega = await entregaService.update(
+    request.params.entregaId,
+    request.body
+  );
+  updatedEntrega
+    ? response.json(updatedEntrega)
+    : notFound(request, response);
 
 });
 
