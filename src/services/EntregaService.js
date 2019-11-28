@@ -27,7 +27,6 @@ class EntregaService {
       const entregas = Object.keys(db).map(toArray);
       resolve(entregas);
     });
-
   }
 
   static getById(id) {
