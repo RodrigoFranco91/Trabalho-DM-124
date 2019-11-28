@@ -30,7 +30,9 @@ class EntregaService {
   }
 
   static getById(id) {
-
+    return new Promise((resolve) => {
+      resolve(db[id]);
+    });
   }
 
   static update(id, updatedEntrega) {
@@ -40,7 +42,7 @@ class EntregaService {
   static delete(id) {
     return new Promise((resolve) => {
       const entrega = db[id];
-      if(entrega) {
+      if (entrega) {
         delete db[id];
         resolve(true);
       }
