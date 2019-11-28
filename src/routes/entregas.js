@@ -29,8 +29,10 @@ router.patch('/:entregaId', checkAuth, async (request, response) => {
 });
 
 router.delete('/:entregaId', checkAuth, async (request, response) => {
-
-
+  const isDeleted = await entregaService.delete(request.params.entregaId);
+  isDeleted
+    ? response.end()
+    : notFound(request, response)
 });
 
 module.exports = router;
