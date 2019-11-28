@@ -19,8 +19,10 @@ router.get('/', async (request, response) => {
 });
 
 router.get('/:entregasId', async (request, response) => {
-
-
+  const entrega = await entregaService.getById(request.params.entregasId);
+  entrega
+    ? response.json(entrega)
+    : notFound(request, response);
 });
 
 router.patch('/:entregaId', checkAuth, async (request, response) => {
