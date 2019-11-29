@@ -12,9 +12,11 @@ class EntregaService {
         idDoCliente: newEntrega.idDoCliente,
         nomeDoRecebedor: newEntrega.nomeDoRecebedor,
         cpfDoRecebedor: newEntrega.cpfDoRecebedor,
-        recebedorComprador: newEntrega.recebedorComprador || false,
-        dataHoraEntrega: newEntrega.dataHoraEntrega,
-        localizacao: newEntrega.localizacao
+        recebedorEhComprador: newEntrega.recebedorEhComprador || false,
+        dataEntrega: newEntrega.dataEntrega,
+        horaEntrega: newEntrega.horaEntrega,
+        localizacao: newEntrega.localizacao,
+        entregaRealizada: newEntrega.entregaRealizada || false
       };
       db[entrega.id] = entrega;
       resolve(entrega);
