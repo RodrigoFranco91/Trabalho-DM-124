@@ -38,7 +38,24 @@ class EntregaService {
   }
 
   static update(id, updatedEntrega) {
-
+    return new Promise(async (resolve) => {
+      const entrega = await EntregaService.getById(id);
+      if (entrega) {
+        const recebedorEhCompradorhasValue = updatedEntrega.recebedorEhComprador != null;
+        const entregaRealizadahasValue = updatedEntrega.entregaRealizada != null;
+        entrega.idDoPedido = updatedEntrega.idDoPedido || entrega.idDoPedido;
+        entrega.idDoCliente = updatedEntrega.idDoCliente || entrega.idDoCliente;
+        entrega.nomeDoRecebedor = updatedEntrega.nomeDoRecebedor || entrega.nomeDoRecebedor;
+        entrega.cpfDoRecebedor = updatedEntrega.cpfDoRecebedor || entrega.cpfDoRecebedor;
+        entrega.dataEntrega = updatedEntrega.dataEntrega || entrega.dataEntrega;
+        entrega.horaEntrega = updatedEntrega.horaEntrega || entrega.horaEntrega;
+        entrega.localizacao = updatedEntrega.localizacao || entrega.localizacao;
+        entrega.recebedorEhComprador = recebedorEhCompradorhasValue ? updatedEntrega.recebedorEhComprador : entrega.recebedorEhComprador;
+        entrega.entregaRealizada = entregaRealizadahasValue ? updatedEntrega.entregaRealizada : entrega.entregaRealizada;
+        resolve(entrega);
+      }
+      resolve(null);
+    });
   }
 
   static delete(id) {
