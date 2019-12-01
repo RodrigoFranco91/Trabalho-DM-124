@@ -1,0 +1,381 @@
+{
+	"info": {
+		"_postman_id": "8a992dae-05fa-4928-bb77-ff779d141eda",
+		"name": "Heroku-DM-124",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "alunosinatel",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inatel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"idDoPedido\": \"1\",\n        \"idDoCliente\": \"1\",\n        \"nomeDoRecebedor\": \"Rodrigo\",\n        \"cpfDoRecebedor\": \"000.000.000-00\",\n        \"dataEntrega\": \"25/10/2019\",\n        \"horaEntrega\": \"15:00\",\n        \"localizacao\": \"Cidade: Pouso Alegre - MG. Rua: Airton Senna. Número: 00. Bairro: Centro.\"\n}"
+				},
+				"url": {
+					"raw": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas",
+					"protocol": "https",
+					"host": [
+						"rodrigo-franco-dm-124",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"entregas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "alunosinatel",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inatel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"idDoPedido\": \"2\",\n        \"idDoCliente\": \"2\",\n        \"nomeDoRecebedor\": \"Ed\",\n        \"cpfDoRecebedor\": \"000.000.000-00\",\n        \"dataEntrega\": \"12/11/2019\",\n        \"horaEntrega\": \"18:00\",\n        \"localizacao\": \"Cidade: Pouso Alegre - MG. Rua: São Paulo. Número: 00. Bairro: Centro.\"\n}"
+				},
+				"url": {
+					"raw": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas",
+					"protocol": "https",
+					"host": [
+						"rodrigo-franco-dm-124",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"entregas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "alunosinatel",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inatel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas",
+					"protocol": "https",
+					"host": [
+						"rodrigo-franco-dm-124",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"entregas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas/1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "alunosinatel",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inatel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas/1",
+					"protocol": "https",
+					"host": [
+						"rodrigo-franco-dm-124",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"entregas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas/1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "alunosinatel",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inatel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idDoPedido\": \"1\",\n    \"idDoCliente\": \"1\",\n    \"nomeDoRecebedor\": \"Rodrigo Franco de Lima\",\n    \"cpfDoRecebedor\": \"000-0000-0000-00\",\n    \"recebedorEhComprador\": true,\n    \"dataEntrega\": \"25/10/2019\",\n    \"horaEntrega\": \"15:00\",\n    \"localizacao\": \"Brasil\",\n    \"entregaRealizada\": true\n}"
+				},
+				"url": {
+					"raw": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas/1",
+					"protocol": "https",
+					"host": [
+						"rodrigo-franco-dm-124",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"entregas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas/1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "alunosinatel",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inatel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas/1",
+					"protocol": "https",
+					"host": [
+						"rodrigo-franco-dm-124",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"entregas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas/2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "alunosinatel",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inatel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas/2",
+					"protocol": "https",
+					"host": [
+						"rodrigo-franco-dm-124",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"entregas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas/2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "alunosinatel",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inatel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas/2",
+					"protocol": "https",
+					"host": [
+						"rodrigo-franco-dm-124",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"entregas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "alunosinatel",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inatel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://rodrigo-franco-dm-124.herokuapp.com/api/entregas",
+					"protocol": "https",
+					"host": [
+						"rodrigo-franco-dm-124",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"entregas"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
