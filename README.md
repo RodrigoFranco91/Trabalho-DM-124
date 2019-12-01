@@ -54,14 +54,20 @@ Body:
 # Método - Get
 URI: localhost:8080/api/entregas
 
-Body: {}
+Body: 
+
+	{}
 
 # Método - Get
 URI: localhost:8080/api/entregas/1
 
-Body: {}
+Body: 
+
+	{}
 
 # Método - Delete
 URI: localhost:8080/api/entregas/1
 
-Body: {}
+Body: 
+
+	{}
