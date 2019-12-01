@@ -3,6 +3,7 @@ Repositório destinado ao trabalho avaliativo da Pós-graduação na disciplina 
 
 # Instalando esta API:
 1- Download da API com o comando: git clone https://github.com/RodrigoFranco91/Trabalho-DM-124.git
+
 2- Instalação das dependências da API com o comando: npm install (utilizar esse comando no terminal dentro na pasta do projeto)
 
 # Rodar a aplicação:
@@ -10,7 +11,9 @@ Repositório destinado ao trabalho avaliativo da Pós-graduação na disciplina 
 
 # Autenticação:
 Utilizar a autenticação do tipo Basic Auth;
+
 Username: inatel
+
 Password: alunosinatel
 
 # Testando a aplicação:
@@ -18,9 +21,11 @@ Obs: Dentro do diretório Postman há collections prontas para testar a API.
 
 # Método - Post
 URI: localhost:8080/api/entregas
+
 Body:
+
     {
-		"idDoPedido": "1",
+	"idDoPedido": "1",
         "idDoCliente": "1",
         "nomeDoRecebedor": "Rodrigo",
         "cpfDoRecebedor": "000.000.000-00",
@@ -31,7 +36,9 @@ Body:
 
 # Método - Patch
 URI: localhost:8080/api/entregas
+
 Body:
+
     {
         "idDoPedido": "1",
         "idDoCliente": "1",
@@ -46,12 +53,15 @@ Body:
 
 # Método - Get
 URI: localhost:8080/api/entregas
+
 Body: {}
 
 # Método - Get
 URI: localhost:8080/api/entregas/1
+
 Body: {}
 
 # Método - Delete
 URI: localhost:8080/api/entregas/1
+
 Body: {}
