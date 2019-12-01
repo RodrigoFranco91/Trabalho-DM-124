@@ -20,7 +20,7 @@ Password: alunosinatel
 Obs: Dentro do diretório Postman há collections prontas para testar a API.
 
 # Método - Post
-URI: localhost:8080/api/entregas
+URI: localhost:8080/api/entregas ou https://rodrigo-franco-dm-124.herokuapp.com/api/entregas
 
 Body:
 
@@ -35,7 +35,7 @@ Body:
     }
 
 # Método - Patch
-URI: localhost:8080/api/entregas
+URI: localhost:8080/api/entregas/1 ou https://rodrigo-franco-dm-124.herokuapp.com/api/entregas/1
 
 Body:
 
@@ -52,21 +52,21 @@ Body:
     }
 
 # Método - Get
-URI: localhost:8080/api/entregas
+URI: localhost:8080/api/entregas ou https://rodrigo-franco-dm-124.herokuapp.com/api/entregas
 
 Body: 
 
 	{}
 
 # Método - Get
-URI: localhost:8080/api/entregas/1
+URI: localhost:8080/api/entregas/1 ou https://rodrigo-franco-dm-124.herokuapp.com/api/entregas/1
 
 Body: 
 
 	{}
 
 # Método - Delete
-URI: localhost:8080/api/entregas/1
+URI: localhost:8080/api/entregas/1 ou https://rodrigo-franco-dm-124.herokuapp.com/api/entregas/1
 
 Body: 
 
